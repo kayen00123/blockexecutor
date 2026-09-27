@@ -1,0 +1,16 @@
+# Environment — never commit real secrets
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+tmp_*.cmd
+tmp_*.log
+
+# OS
+.DS_Store
+Thumbs.db

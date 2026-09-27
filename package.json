@@ -1,0 +1,20 @@
+{
+  "name": "aster-settlement-executor",
+  "version": "1.0.0",
+  "description": "Settlement executor for Aster DEX — settles matched fills on-chain across BSC, Base, Robinhood Chain and Solana.",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env settlement-executor.mjs",
+    "start:once": "SETTLEMENT_ONCE=true node --env-file=.env settlement-executor.mjs"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "tweetnacl": "^1.0.3",
+    "viem": "^2.55.15"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
