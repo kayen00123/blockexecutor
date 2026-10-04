@@ -6,8 +6,10 @@ primary_region = 'iad'
 
 [env]
   SETTLEMENT_API_URL = 'https://altbloc-backend-prod.fly.dev'
-  SETTLEMENT_LIVE = 'false'
+  SETTLEMENT_LIVE = 'true'
+  ALLOW_MAINNET_LIVE = 'true'
   SETTLEMENT_POLL_MS = '3000'
+  SETTLEMENT_POLL_LIMIT = '50'
   SETTLEMENT_ONCE = 'false'
 
 [[vm]]
