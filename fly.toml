@@ -1,0 +1,16 @@
+app = 'altbloc-settlement-prod'
+primary_region = 'iad'
+
+[build]
+  dockerfile = 'Dockerfile'
+
+[env]
+  SETTLEMENT_API_URL = 'https://altbloc-backend-prod.fly.dev'
+  SETTLEMENT_LIVE = 'false'
+  SETTLEMENT_POLL_MS = '3000'
+  SETTLEMENT_ONCE = 'false'
+
+[[vm]]
+  memory = '512mb'
+  cpu_kind = 'shared'
+  cpus = 1
